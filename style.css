@@ -77,7 +77,7 @@
 
 :root {
   --marqueeWidth: 100%;
-  --marqueeHeight: 100px;
+  --marqueeHeight: 50px;
   --marqueeElementsDisplayed: 2;
   --marqueeElementsWidth: calc(var(--marqueeWidth) / var(--marqueeElementsDisplayed));
   --marqueeAnimationDuration: calc(var(--marqueeElements) * 30s);
@@ -100,14 +100,13 @@
   animation: scrolling var(--marqueeAnimationDuration) linear infinite;
 }
 
-/* -10vw -170vw  40s */
 @keyframes scrolling {
   0% {
     transform: translateX(0);
   }
 
   100% {
-    transform: translateX(calc(-1 * var(--marqueeElementWidth) * var(--marqueeElements)));
+    transform: translateX(calc(-1 * var(--marqueeElementsWidth) * var(--marqueeElements)));
   }
 }
 
