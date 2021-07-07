@@ -103,20 +103,21 @@
 /* -10vw -170vw  40s */
 @keyframes scrolling {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   100% {
-    transform: translateX(calc(-1 * var(--marqueeElementWidth) * var(--marqueeElements)));
+    transform: translateY(calc(-1 * var(--marqueeElementWidth) * var(--marqueeElements)));
   }
 }
 
 .marquee-content li img {
   width: 100%;
-  height: 110px;
+  height: 50px;
+  
   /* border: 2px solid #111; */
 
-  transform: translateY(-20px);
+  transform: translateY();
 }
 
 .marquee-content li {
