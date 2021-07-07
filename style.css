@@ -103,11 +103,11 @@
 /* -10vw -170vw  40s */
 @keyframes scrolling {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateY(calc(-1 * var(--marqueeElementWidth) * var(--marqueeElements)));
+    transform: translateX(calc(-1 * var(--marqueeElementWidth) * var(--marqueeElements)));
   }
 }
 
